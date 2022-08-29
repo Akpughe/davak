@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+}
+span,
+p,
+a {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.btn_template {
+  font-size: 0.875rem;
+  background: #f4f1ee;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.4s ease 0s;
+  padding: 1px 12px;
+}
+
+.btn_template:hover {
+  background: rgb(55, 96, 156);
+  color: rgb(255, 255, 255);
+}
+
+main {
+  background-image: repeating-linear-gradient(
+    0deg,
+    #f8f7f7,
+    #f8f7f7 1px,
+    transparent 1px,
+    transparent
+  );
+  background-attachment: fixed;
+  background-size: 1px 101px;
+  min-height: 100vh;
+}
+
+.nav-item:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: rgb(0, 0, 0);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.nav-item:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.toabout:after {
+  content: ' ';
+  display: inline-block;
+  background-image: url('../icons/forwardarrow.svg');
+  margin-left: 10px;
+  /* position: absolute; */
+  /* bottom: 100px; */
+  height: 21px;
+  width: 21px;
+  background-size: contain;
+  /* top: 28%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  animation: floating 2s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(15px, 0px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+.timeline {
+  list-style-type: none;
+  position: relative;
+}
+
+.timeline li {
+  margin: 3rem 0;
+  padding-left: 20px;
+}
+
+/* a {
+  font-size: var(--font-md);
+  font-weight: 500;
+  color: var(--cw);
+  &.float-right {
+    text-decoration: underline;
+    font-size: calc(var(--font-sm) + 0.9px);
+  }
+}
+a svg {
+  margin-top: -0.4rem;
+  width: 13px;
+} */
+
+.timeline li:before {
+  content: ' ';
+  background: #f9f7f6;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid #000;
+  left: -7px;
+  width: 15px;
+  height: 15px;
+  margin-top: 3px;
+  z-index: 400;
+}
+
+.timeline:before {
+  content: ' ';
+  background:#e0e0e0;
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  width: 1px;
+  top: 4px;
+  height: 100%;
+  z-index: 400;
+}
