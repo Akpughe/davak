@@ -132,7 +132,7 @@ a svg {
 
 .timeline:before {
   content: ' ';
-  background:#e0e0e0;
+  background: #e0e0e0;
   display: inline-block;
   position: absolute;
   left: 0px;
@@ -140,4 +140,60 @@ a svg {
   top: 4px;
   height: 100%;
   z-index: 400;
+}
+
+.project_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: '. .';
+}
+
+.content_main .content__slate {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out 0s, transform 300ms ease-in-out 0s;
+  transform: translateY(10%);
+}
+.content_main:hover .content__slate {
+  opacity: 1;
+  z-index: 999;
+}
+
+.content__slate {
+  position: absolute;
+  background: transparent;
+  /* opacity: 0; */
+  color: white;
+  transform: translateY(10%);
+  transition: opacity 300ms ease-in-out 0s, transform 300ms ease-in-out 0s;
+
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.1) 10%,
+    rgb(0 0 0 / 78%) 80%
+  );
+}
+
+.content_main:hover {
+  opacity: 1;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.1) 10%,
+    rgb(0 0 0 / 78%) 80%
+  );
+  
+}
+
+.content__slate p span {
+    background: #7a797a;
+    padding: 4px 10px;
+    border-radius: 50px;
+    text-transform: capitalize;
+    font-size: 11px;
+    margin-right: 6px;
+    color: #fff;
+    font-weight: 500;
 }

@@ -58,10 +58,6 @@ const About = () => {
             <li className="mt-2">
               <div className="flex justify-between mb-4">
                 <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Open Github Link"
-                  href="https://github.com/Akpughe"
                   className="flex items-center text-lg hover:underline"
                 >
                   Design{' '}
@@ -89,7 +85,7 @@ const About = () => {
           </ul>
         </article>
 
-        <FooterLink goto="/projects">Let{"'"}s Continue To Projects</FooterLink>
+        <FooterLink goto="/projects">Lets Continue To Projects</FooterLink>
 
       </div>
     </Layout>
