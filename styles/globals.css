@@ -184,16 +184,29 @@ a svg {
     rgba(0, 0, 0, 0.1) 10%,
     rgb(0 0 0 / 78%) 80%
   );
-  
 }
 
 .content__slate p span {
-    background: #7a797a;
-    padding: 4px 10px;
-    border-radius: 50px;
-    text-transform: capitalize;
-    font-size: 11px;
-    margin-right: 6px;
-    color: #fff;
-    font-weight: 500;
+  background: #7a797a;
+  padding: 4px 10px;
+  border-radius: 50px;
+  text-transform: capitalize;
+  font-size: 11px;
+  margin-right: 6px;
+  color: #fff;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .project_grid {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-template-areas:
+      '.'
+      '.'
+      '.';
+  }
 }
