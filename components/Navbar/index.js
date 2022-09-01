@@ -54,10 +54,10 @@ const Navbar = () => {
             <svg
               stroke="currentColor"
               fill="none"
-              stroke-width="1"
+              strokeWidth="1"
               viewBox="0 0 24 24"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               height="1.8em"
               width="1.8em"
               xmlns="http://www.w3.org/2000/svg"
