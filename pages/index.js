@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <Layout>
       <div className="">
-        <div className="my-12">
+        <div className="my-12 sm:px-0 px-6">
           <h1 className="font-bold text-6xl my-8">I{"'"}m David Akpughe</h1>
 
           <div className="mt-8 space-y-4">

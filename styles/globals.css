@@ -186,6 +186,10 @@ a svg {
   );
 }
 
+.navbar-toggler-icon{
+  background-image: url("../icons/menu.svg");
+}
+
 .content__slate p span {
   background: #7a797a;
   padding: 4px 10px;

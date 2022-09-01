@@ -12,7 +12,7 @@ import FooterLink from '../components/Footer';
 const About = () => {
   return (
     <Layout>
-      <div className="my-12">
+      <div className="my-12 sm:px-0 px-6">
         <h1 className="font-bold text-5xl my-8 capitalize">About me.</h1>
 
         <article>
