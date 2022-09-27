@@ -159,7 +159,7 @@ a svg {
 }
 .content_main:hover .content__slate {
   opacity: 1;
-  z-index: 999;
+  z-index: 99;
 }
 
 .content__slate {
@@ -212,5 +212,14 @@ a svg {
       '.'
       '.'
       '.';
+  }
+  .content_main .content__slate {
+    opacity: 1;
+    transition: opacity 300ms ease-in-out 0s, transform 300ms ease-in-out 0s;
+    transform: translateY(10%);
+  }
+  .content_main:hover .content__slate {
+    opacity: 1;
+    z-index: 99;
   }
 }
