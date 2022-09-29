@@ -4,9 +4,13 @@ import Link from 'next/link';
 import FooterLink from '../components/Footer';
 import { RadioGroup } from '@headlessui/react';
 import ProjectCard from '../components/ProjectCard';
+import PROJECT_DATA from '../Data/projects'
 
 const Projects = () => {
   const [selected, setSelected] = useState('All');
+  const [projects, setProjects] = useState(PROJECT_DATA)
+
+  console.log('projects', projects)
   return (
     <Layout>
       <div className="my-12 sm:px-0 px-6">
@@ -52,18 +56,14 @@ const Projects = () => {
         <div className="m-auto pt-10">
           {/* projects grid */}
           <div className="project_grid">
-            <div className="card p-2.5 ">
-              <ProjectCard />
+            {projects.map((project) => {
+              return (
+
+            <div key={project.id} className="card p-2.5">
+              <ProjectCard project={project} {...project} />
             </div>
-            <div className="card p-2.5 ">
-              <ProjectCard />
-            </div>
-            <div className="card p-2.5 ">
-              <ProjectCard />
-            </div>
-            <div className="card p-2.5 ">
-              <ProjectCard />
-            </div>
+              )
+            })}
           </div>
           {/* end projects grid */}
         </div>

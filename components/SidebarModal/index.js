@@ -22,7 +22,7 @@ const Close = () => (
   </svg>
 );
 
-const SidebarModal = ({ show, handleShow }) => {
+const SidebarModal = ({ show, handleShow, data }) => {
   return (
     <>
       {show && (
@@ -65,22 +65,18 @@ const SidebarModal = ({ show, handleShow }) => {
                           aria-hidden="true"
                         >
                           <div>
-                            <h1 className="text-2xl font-bold">Shoprrr</h1>
+                            <h1 className="text-2xl font-bold">{data.title}</h1>
                             <p className="text-sm font-light">
-                              An E-commerce Application For Buying Cotton
-                              Products.
+                             {data.description}
                             </p>
                           </div>
 
-                          <div className="border w-full h-40 mt-5">gifhere</div>
+                          <div className="flex border w-full mt-5"><img src={data.imageUrl} alt={data.title} className="w-full h-full" /></div>
 
                           <div className="mt-5">
                             <h2 className="text-lg font-normal">About</h2>
                             <p className="text-base font-light text-gray-700 mt-1">
-                              Shoprrr is an e-commerce platform catered towards
-                              giving the best and fast experience for customers
-                              to buy cotton products, we call it a frictionless
-                              process from start to finish.
+                             {data.about}
                             </p>
                           </div>
                           <div className="mt-5">
