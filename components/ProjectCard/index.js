@@ -21,7 +21,7 @@ const ProjectCard = ({ project }) => {
             <p className="text-base">{project.description}</p>
             <p className="flex flex-wrap">
               {project.technologies.map(
-                (tech => <span className="block mb-1">{tech}</span>)
+                (tech => <span key={tech} className="block mb-1">{tech}</span>)
               )}
             </p>
           </div>

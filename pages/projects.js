@@ -59,7 +59,7 @@ const Projects = () => {
             {projects.map((project) => {
               return (
 
-            <div key={project.id} className="card p-2.5">
+            <div key={project} className="card p-2.5">
               <ProjectCard project={project} {...project} />
             </div>
               )
