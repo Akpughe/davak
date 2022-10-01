@@ -43,9 +43,11 @@ const Navbar = () => {
           <li className="relative">
             <a className="font-light nav-item cursor-pointer">Resume</a>
           </li>
+          <Link href="/contact">
           <li className="relative">
             <a className="font-light nav-item cursor-pointer">Contact</a>
           </li>
+          </Link>
         </ul>
       </div>
       <div className="sm:hidden block">
