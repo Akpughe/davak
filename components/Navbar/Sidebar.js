@@ -9,7 +9,7 @@ const Sidebar = ({ close }) => {
   return (
     <>
       <div className="bg-white h-full">
-        <div className="flex justify-end items-center pt-14 sm:px-24 px-12 cursor-pointer">
+        <div className="flex justify-end items-center pt-24 sm:px-24 px-12 cursor-pointer">
           <div onClick={close}>
             <GrClose size={25} color="#fefefe" />
             {/* close */}
