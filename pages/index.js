@@ -36,7 +36,7 @@ export default function Home() {
                 <button className="btn_template">Contact me </button>
               </a>{' '}
               or send me an email at{' '}
-              <a className="">
+              <a className="sm:mt-20 mt-1">
                 <button className="btn_template">
                   davidakpughe2@gmail.com{' '}
                 </button>

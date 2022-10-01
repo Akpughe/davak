@@ -61,7 +61,7 @@ const Sidebar = ({ close }) => {
             </Link>
           </div>
           <div className="mt-5">
-            <Link href="/project">
+            <Link href="/resume">
               <motion.button
                 whileTap={{ scale: 0.95 }}
                 className={`sidebar-text cursor-pointer ${
@@ -75,7 +75,7 @@ const Sidebar = ({ close }) => {
             </Link>
           </div>
           <div className="mt-5">
-            <Link href="/project">
+            <Link href="/contact">
               <motion.button
                 whileTap={{ scale: 0.95 }}
                 className={`sidebar-text cursor-pointer ${
