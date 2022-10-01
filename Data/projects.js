@@ -36,9 +36,11 @@ const PROJECTS_DATA = [
     title: 'Movierr',
     description: 'The fastest check for movies.',
     about:
-      "A movie search app that allows users to search for movies and get information about them. Users can also add movies to their watchlist.",
+      'A movie search app that allows users to search for movies and get information about them. Users can also add movies to their watchlist.',
     link: 'https://affectionate-sammet-424694.netlify.app/',
-    imageUrl: 'https://github.com/Akpughe/movie-tube',
+    imageUrl:
+      'https://res.cloudinary.com/dqsggbqmf/image/upload/v1664652623/davak/Screen_Recording_2022-10-01_at_00_45_35_AdobeExpress_2_ulcqj7.gif',
+    github: 'https://github.com/Akpughe/movie-tube',
     type: ['others', 'project'],
     technologies: ['React', 'Javascript', 'APIs'],
   },
