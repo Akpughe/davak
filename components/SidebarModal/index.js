@@ -33,11 +33,11 @@ const SidebarModal = ({ show, handleShow, data }) => {
           aria-modal="true"
         >
           <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
-          <div className="fixed inset-0 overflow-hidden">
-            <div className="absolute inset-0 overflow-hidden">
-              <div className="pointer-events-none fixed inset-y-0 right-0 flex max-w-full">
+          <div className="fixed inset-0 overflow-auto">
+            <div className="absolute inset-0 overflow-auto">
+              <div className="pointer-events-none fixed overflow-auto inset-y-0 right-0 flex max-w-full">
                 <div className="pointer-events-auto relative overflow-auto w-screen sm:max-w-lg max-w-full">
-                  <div className="flex h-full flex-col bg-white shadow-xl">
+                  <div className="flex h-full flex-col bg-white shadow-xl relative overflow-auto">
                     <div className="flex items-center justify-between px-4 pt-8 sm:px-10 border-b pb-3 mb-3">
                       <button
                         onClick={() => handleShow()}
@@ -58,7 +58,7 @@ const SidebarModal = ({ show, handleShow, data }) => {
                         Back To Projects.
                       </a>
                     </div>
-                    <div className="relative mt-5 flex-1 px-4 pb-32 sm:px-6">
+                    <div className="relative mt-5 flex-1 px-4 pb-32 sm:px-6 overflow-auto ">
                       <div className="absolute inset-0 px-4 sm:px-10">
                         <div
                           className="h-full border-gray-200"
@@ -67,16 +67,22 @@ const SidebarModal = ({ show, handleShow, data }) => {
                           <div>
                             <h1 className="text-2xl font-bold">{data.title}</h1>
                             <p className="text-sm font-light">
-                             {data.description}
+                              {data.description}
                             </p>
                           </div>
 
-                          <div className="flex border w-full mt-5"><img src={data.imageUrl} alt={data.title} className="w-full h-full" /></div>
+                          <div className="flex border w-full mt-5">
+                            <img
+                              src={data.imageUrl}
+                              alt={data.title}
+                              className="w-full h-full"
+                            />
+                          </div>
 
                           <div className="mt-5">
                             <h2 className="text-lg font-normal">About</h2>
                             <p className="text-base font-light text-gray-700 mt-1">
-                             {data.about}
+                              {data.about}
                             </p>
                           </div>
                           <div className="mt-5">
@@ -84,46 +90,42 @@ const SidebarModal = ({ show, handleShow, data }) => {
                               Technologies
                             </h2>
                             <div className="flex flex-wrap mt-4">
-                              <span className="bg-[#eee9e4] py-1 px-3 mr-1 text-xs text-black rounded capitalize font-bold">
-                                React
-                              </span>
-                              <span className="bg-[#eee9e4] py-1 px-3 mr-1 text-xs text-black rounded capitalize font-bold">
-                                React
-                              </span>
-                              <span className="bg-[#eee9e4] py-1 px-3 mr-1 text-xs text-black rounded capitalize font-bold">
-                                React
-                              </span>
+                              {data.technologies.map((tech) => (
+                                <span className="bg-[#eee9e4] py-1 px-3 mr-1 text-xs text-black rounded capitalize font-bold mb-1">
+                                  {tech}
+                                </span>
+                              ))}
                             </div>
                           </div>
                           <div className="mt-8">
                             <h2 className="text-lg font-normal">Website</h2>
                             <p>
                               <a
-                                href="https://shoprrr.com"
+                                href={data.link}
                                 target="_blank"
                                 rel="noopener noreferrer"
                               >
-                                https://shoprrr.com
+                               {data.link}
                               </a>
                             </p>
                           </div>
-                          <div className="mt-8">
+                          {data.github && <div className="mt-8">
                             <h2 className="text-lg font-normal">Github</h2>
                             <p>
                               <a
-                                href="https://github.com"
+                                href={data.github}
                                 target="_blank"
                                 rel="noopener noreferrer"
                               >
-                                https://github.com
+                               {data.github}
                               </a>
                             </p>
-                          </div>
+                          </div>}
                         </div>
                       </div>
                     </div>
                     <a
-                      href="https://github.com"
+                      href={data.link}
                       className="flex justify-center items-center bg-black w-full bottom-0 left-0 text-white text-center p-4"
                       target="_blank"
                       id="cardHover"
