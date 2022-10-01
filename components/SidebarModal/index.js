@@ -91,7 +91,7 @@ const SidebarModal = ({ show, handleShow, data }) => {
                             </h2>
                             <div className="flex flex-wrap mt-4">
                               {data.technologies.map((tech) => (
-                                <span className="bg-[#eee9e4] py-1 px-3 mr-1 text-xs text-black rounded capitalize font-bold mb-1">
+                                <span key={tech} className="bg-[#eee9e4] py-1 px-3 mr-1 text-xs text-black rounded capitalize font-bold mb-1">
                                   {tech}
                                 </span>
                               ))}
