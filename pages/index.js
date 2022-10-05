@@ -28,15 +28,15 @@ export default function Home() {
                 <button className="btn_template">Projects </button>
               </a>
               ,{' '}
-              <a className="">
+              <a onClick={() => router.push('/resume')} className="">
                 <button className="btn_template">Resume </button>
               </a>
               ,
-              <a className="">
+              <a onClick={() => router.push('/contact')} className="">
                 <button className="btn_template">Contact me </button>
               </a>{' '}
               or send me an email at{' '}
-              <a>
+              <a href="mailto:davidakpughe2@gmail.com">
                 <button className="btn_template sm:mt-0 mt-1">
                   davidakpughe2@gmail.com{' '}
                 </button>
