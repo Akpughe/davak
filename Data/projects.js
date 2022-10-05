@@ -58,7 +58,7 @@ const PROJECTS_DATA = [
   },
   {
     title: 'GeoProp',
-    description: 'Real estate close to you',
+    description: 'Search for homes in your area.',
     about:
       'A real estate app that allows users to search for properties close to them using the Google Maps API.',
     link: 'https://geolocate-frontend.vercel.app/',
