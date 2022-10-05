@@ -56,6 +56,17 @@ const PROJECTS_DATA = [
     type: ['others', 'project'],
     technologies: ['NextJS', 'TailwindCSS', 'Javascript', 'APIs'],
   },
+  {
+    title: 'GeoProp',
+    description: 'Real estate close to you',
+    about:
+      'A real estate app that allows users to search for properties close to them using the Google Maps API.',
+    link: 'https://geolocate-frontend.vercel.app/',
+    imageUrl:
+      'https://res.cloudinary.com/dqsggbqmf/image/upload/v1665011237/davak/Screenshot_2022-10-06_at_00.00.07_k8mxqq.png',
+    type: ['others', 'project'],
+    technologies: ['NextJS', 'TailwindCSS', 'Javascript', 'Express',  'Google Map API'],
+  },
   // {
   //   title: 'Nester Verify',
   //   description:
