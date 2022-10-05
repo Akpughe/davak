@@ -26,7 +26,7 @@ const Contact = () => {
           <div>
             <input
               type="text"
-              placeholder="Name"
+              placeholder="Email"
               className="form-control w-full block py-6 px-5 border border-[#ced4da] rounded mb-8 outline-none font-light"
             />
           </div>
