@@ -29,7 +29,7 @@ const Resume = () => {
           or{' '}
           <a
             className="font-semibold hover:underline"
-            href="https://www.dropbox.com/preview/David_Akpughe_Resume.pdf"
+            href="https://www.dropbox.com/s/fwn9werlug5u03p/David_Akpughe_Resume.pdf?dl=0"
             target="_blank"
             rel="noopener noreferrer"
           >
